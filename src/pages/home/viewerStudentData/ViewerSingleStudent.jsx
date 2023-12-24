@@ -28,7 +28,7 @@ const ViewerSingleStudent = ({
           : ""
       }`}
       rel="noreferrer"
-      className="w-full"
+      className="w-full cursor-text"
     >
       <input
         readOnly
