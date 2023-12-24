@@ -38,7 +38,7 @@ const CreateHeading = ({ allnewdata, setAllnewdata, setAllheadingCount }) => {
   };
   return (
     <div>
-      <div className="card flex-shrink-0 w-full max-w-xl shadow-2xl bg-base-100">
+      <div className="card flex-shrink-0 w-full max-w-xl shadow-2xl bg-white">
         <form
           onSubmit={handleCreateHeading}
           className="card-body  flex flex-col lg:flex-row"

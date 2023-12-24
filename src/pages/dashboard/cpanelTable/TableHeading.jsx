@@ -43,7 +43,7 @@ const TableHeading = () => {
           </div>
 
           <div className="w-full md:w-6/12 flex   flex-col">
-            <div className="justify-center items-center flex  w-full md:w-6/12 rounded-2xl py-8  shadow-2xl bg-base-100">
+            <div className="justify-center items-center flex  w-full md:w-6/12 rounded-2xl py-8  shadow-2xl bg-white">
               <button className="btn btn-primary">CREATE NEW STUDENT</button>
             </div>
             <div className="mt-10 flex flex-col md:w-6/12  gap-5 md:flex-row">

@@ -108,17 +108,17 @@ const TableRow = (props) => {
   };
   return (
     <>
-      <div className="my-2 flex w-full flex-row gap-1">
-        <p className="w-1/12">{serial}</p>
+      <div className="my-2 flex w-full flex-row ">
+        <p className="w-6 ">{serial}</p>
         <form
-          className="w-8/12 flex justify-between flex-row gap-3"
+          className="w-8/12 flex justify-between flex-row gap-3 mr-1"
           onSubmit={handleSubmit(onSubmit)}
         >
           {/* register your input into the hook by invoking the "register" function */}
           <input
             readOnly={!edit}
             defaultValue={TableHeading.heading_value}
-            className="pl-1  w-full lg:w-10/12 outline-none  ml-2 rounded-md"
+            className="pl-1  w-full lg:w-10/12 outline-none bg-white  ml-2 rounded-md"
             {...register("heading_value")}
           />
           <input

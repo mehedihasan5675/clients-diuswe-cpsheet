@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const ViewerSingleStudent = ({
   singlestudentdataObj,
   serial,
@@ -6,7 +8,28 @@ const ViewerSingleStudent = ({
   sixIndexProperty,
 }) => {
   return (
-    <div className="w-full ">
+    <Link
+      to={`${
+        serial === 3
+          ? singlestudentdataObj[eachPropertyName]
+          : serial === 4
+          ? singlestudentdataObj[eachPropertyName]
+          : serial === 5
+          ? singlestudentdataObj[eachPropertyName]
+          : "#"
+      }`}
+      target={`${
+        serial === 3
+          ? "_blank"
+          : serial === 4
+          ? "_blank"
+          : serial === 5
+          ? "_blank"
+          : ""
+      }`}
+      rel="noreferrer"
+      className="w-full"
+    >
       <input
         readOnly
         defaultValue={singlestudentdataObj[eachPropertyName]}
@@ -23,9 +46,18 @@ const ViewerSingleStudent = ({
           eachPropertyName === oneIndexProperty
             ? "pl-2 mb-2 w-full tracking-wide  outline-none  font-bold italic bg-yellow-100  "
             : "pl-2 mb-2 w-full tracking-wide  outline-none bg-red-100"
+        }
+        ${
+          serial === 3
+            ? "cursor-pointer "
+            : serial === 4
+            ? "cursor-pointer "
+            : serial === 5
+            ? "cursor-pointer"
+            : "cursor-text "
         }`}
       />
-    </div>
+    </Link>
   );
 };
 

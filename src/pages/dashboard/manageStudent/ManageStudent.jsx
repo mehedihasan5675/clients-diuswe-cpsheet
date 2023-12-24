@@ -20,7 +20,7 @@ const ManageStudent = () => {
       });
   }, []);
   return (
-    <div className=" h-full  ">
+    <div className=" h-screen   ">
       <h2 className="text-center text-lg lg:text-xl tracking-wider font-mono mb-5">
         Individual Data Editor & Manager
       </h2>
@@ -30,10 +30,10 @@ const ManageStudent = () => {
         )}
       </p>
       <div className="flex flex-row ">
-        <div className="w-6/12 max-w-xl">
+        <div className="w-4/12 max-w-sm">
           <HeadingTitle></HeadingTitle>
         </div>
-        <div className="w-6/12 max-w-[610px]">
+        <div className="w-8/12 max-w-5xl">
           <div className="  ">
             <StudentDataArr></StudentDataArr>
           </div>

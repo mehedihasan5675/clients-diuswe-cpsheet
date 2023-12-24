@@ -57,7 +57,7 @@ const StudentColumn = ({ allnewdata }) => {
                 i == 0 ? "Places the student's data here" : "..."
               }`}
               required
-              className="pl-1  w-full outline-none   rounded-md"
+              className="pl-1 bg-white w-full outline-none   rounded-md"
               {...register(`_${i + 1}_PName`)}
             />
           </div>

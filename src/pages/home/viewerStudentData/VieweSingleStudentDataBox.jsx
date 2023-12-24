@@ -46,7 +46,7 @@ const VieweSingleStudentDataBox = ({ singlestudentdataObj, serial }) => {
   }
 
   return (
-    <div className="min-w-fit">
+    <div className="min-w-fit ">
       <p className="h-10 mx-auto bg-green-200 rounded-tl-full rounded-br-full flex justify-center items-center font-bold text-2xl  w-10 px-28  text-black">
         {" "}
         {serial}{" "}
